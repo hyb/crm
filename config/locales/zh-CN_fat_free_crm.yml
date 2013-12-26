@@ -10,13 +10,13 @@ zh-CN:
   select_none: -- 无 --
   select_blank: -- 选择 --
   yes_button: 是
-  tab_dashboard: 摘要
-  tab_tasks: 任务
-  tab_campaigns: 促销
-  tab_leads: 线索
-  tab_accounts: 账号
-  tab_contacts: 联系人
-  tab_opportunities: 商机
+  tab_dashboard: 综合信息版
+  tab_tasks: 拜访任务
+  tab_campaigns: 产品信息
+  tab_leads: 待开发客户
+  tab_accounts: 现有户
+  tab_contacts: 账户联系人
+  tab_opportunities: 融资需求
   admin_tab_users: 用户
   admin_tab_settings: 设置
   admin_tab_plugins: 插件
@@ -33,28 +33,28 @@ zh-CN:
   contacted: 已联系
   converted: 已转换
   rejected: 已拒绝
-  cold_call: 冷电话
+  cold_call: 陌生拜访
   conference: 会议
   online: 在线营销
   referral: 转来
   self: 自己产生
   web: 网站
-  word_of_mouth: 口头
+  word_of_mouth: 口头承诺
   other: 其它
-  prospecting: 展望
-  analysis: 分析
-  presentation: 演示
-  proposal: 建议
-  negotiation: 谈判
+  prospecting: 口头提出
+  analysis: 具体讨论
+  presentation: 背景调查
+  proposal: 寻找合作方
+  negotiation: 谈判接洽
   final_review: 最后审查
-  won: 结束／赢
-  lost: 结束／输
-  call: 电话
+  won: 成功
+  lost: 失败
+  call: 电话号码
   email: Email
   follow_up: 跟进
   lunch: 午餐
   meeting: 会议
-  money: 钱
+  money: 金额
   trip: 旅行
   overdue: 逾期
   due_asap: 尽快
@@ -117,9 +117,9 @@ zh-CN:
         opportunity:
           attributes:
             name:
-              missing_opportunity_name: ^请指定商机名称
+              missing_opportunity_name: ^请指定融资需求名称
             access:
-              share_opportunity: ^请指定可以共享商机的用户
+              share_opportunity: ^请指定可以共享融资需求的用户
         task:
           attributes:
             name:
@@ -155,7 +155,7 @@ zh-CN:
   msg_cant_do: 不能 %{action} %{asset} 因为它已经不存在
   msg_email_not_found: 未找到用户使用此邮件地址
   msg_enter_new_password: 请输入新密码
-  msg_goodbye: 您已退出，感谢您使用 Fat Free CRM!
+  msg_goodbye: 您已退出，感谢您使用 EverBright CRM!
   msg_invalid_password: ^^请输入正确密码
   msg_invalig_login: 用户名或密码错
   msg_last_login: 您上次登录是在 %{value}.
@@ -166,8 +166,8 @@ zh-CN:
   msg_password_updated: 密码更新成功
   msg_pwd_instructions_sent: 重置密码方法已经发出，请检查您的邮件
   msg_require_admin: 必须是管理员才能使用本页
-  msg_successful_signup: 成功申请，欢迎您使用 Fat Free CRM!
-  msg_welcome: 欢迎使用 Fat Free CRM!
+  msg_successful_signup: 成功申请，欢迎您使用 EverBright CRM!
+  msg_welcome: 欢迎使用 EverBright CRM!
   option_amount*probability: weighted amount
   activity_options: 显示 %{models} 行业由 %{user} 在过去 %{period}.
   all_users: 所有用户
@@ -284,7 +284,7 @@ zh-CN:
   no_start_date: 未指定开始日期
   number_of_leads: 线索数
   objectives: 目标
-  objectives_help: 请指定目标线索数、商机转换率、目标收入、战役预算，这些数据帮助跟踪实际战役产出。
+  objectives_help: 请指定目标线索数、融资需求转换率、目标收入、战役预算，这些数据帮助跟踪实际战役产出。
   objectives_small: 战役目标
   revenue: 收入
   revenue_label: 收入(￥)
@@ -324,12 +324,12 @@ zh-CN:
   web_presence: web
   web_presence_small: web
   works_at: ! '%{job_title} 在 %{company}'
-  affiliate: 下属
-  competitor: 对手
-  customer: 顾客
-  partner: 合伙人
-  reseller: 供销商
-  vendor: 工厂
+  affiliate: 信托
+  competitor: 阳光
+  customer: 股票
+  partner: 债券
+  reseller: 私募
+  vendor: 货币
   total_accounts: 账号总计
   select_contact: 选择账号
   select_a_country: 选择国家
@@ -339,7 +339,7 @@ zh-CN:
   convert_lead_permissions_intro: 联系人权限将会从被转换的线索中复制。以后可修改。
   convert_lead_text: 转换线索 %{value} 将会使其变成一个与现有或新建账号关联的联系人，线索状态自动设为已转换。
   create_lead: 创建线索
-  create_opp_for_contact: 可以为 %{value} 联系人创建一个商机，需指定名称、当前阶段、预计结束日期、销售可能性、线索数量、折扣。
+  create_opp_for_contact: 可以为 %{value} 联系人创建一个融资需求，需指定名称、当前阶段、预计结束日期、销售可能性、线索数量、折扣。
   lead: 线索
   lead_info_small: 线索联系人
   lead_permissions_intro_private: 默认从战役复制权限或设为私有。以后可修改。
@@ -364,7 +364,7 @@ zh-CN:
   closed_ago_on: 结束于 %{time_ago} 之前，在 %{date}
   closes_today: 预计今天结束!
   closing_date: 结束日期是 %{value}
-  create_opportunity: 创建商机
+  create_opportunity: 创建融资需求
   currency: (￥)
   days_late: 晚了
   days_left: 天剩余
@@ -374,21 +374,21 @@ zh-CN:
   from: 从
   no_closing_date: 没有预计结束日期
   no_discount: 没有折扣
-  opportunities: 商机
-  opportunities_options: 商机选项
-  opportunities_small: 商机
-  opportunity: 商机
-  opportunity_small: 商机
-  opportunity_summary: 商机摘要
+  opportunities: 融资需求
+  opportunities_options: 融资需求选项
+  opportunities_small: 融资需求
+  opportunity: 融资需求
+  opportunity_small: 融资需求
+  opportunity_summary: 融资需求摘要
   opportunity_summary_text: ! '%{amount} 有 %{discount} 折扣和 %{probability} 可能性'
   past_due: 超过预计, 预计结束于 %{value} 之前
   probability: 可能性
   probability_number: 有 %{value} 可能性
-  save_opportunity: 保存商机
+  save_opportunity: 保存融资需求
   stage: 阶段
-  total_opportunities: 商机总计
+  total_opportunities: 融资需求总计
   weighted_amount: 权重数量
-  select_opportunity: 选择商机
+  select_opportunity: 选择融资需求
   Discard: 放弃
   assign_to: 分配给
   assigned_tab: 已分配
@@ -430,9 +430,9 @@ zh-CN:
   view_pending_tasks: 查看进行中任务
   my_tasks: 我的任务
   no_task_records: 暂无任务
-  my_opportunities: 我的商机
-  no_opportunity_records: 暂无商机
-  my_accounts: 我的账号
+  my_opportunities: 融资需求
+  no_opportunity_records: 暂无融资需求
+  my_accounts: 我的客户
   no_account_records: 暂无账号
   select_task: 选择任务
   action_commented: 评论于
@@ -448,12 +448,12 @@ zh-CN:
   no_activity_records: 没有行为记录
   recent_activity: 最近行为
   recent_activity_options: 最近行为选项
-  subject_account: 账号
-  subject_campaign: 促销
-  subject_contact: 联系人
-  subject_lead: 线索
-  subject_opportunity: 商机
-  subject_task: 任务
+  subject_account: 现有户
+  subject_campaign: 产品信息
+  subject_contact: 账户联系人
+  subject_lead: 待开发客户
+  subject_opportunity: 融资需求
+  subject_task: 拜访任务
   add_note: 添加注释
   save_note: 保存注释
   add_note_help: 添加一个新注释...
@@ -504,12 +504,12 @@ zh-CN:
   about: 关于
   about_dev_group: 开发者讨论组
   about_features: 特性与bugs
-  about_ffc: 关于 Fat Free CRM
-  about_ffc_resources: Fat Free CRM 资源 (在新窗口打开)
-  about_ffc_version: Fat Free CRM 版本
+  about_ffc: 关于 EverBright CRM
+  about_ffc_resources: EverBright CRM 资源 (在新窗口打开)
+  about_ffc_version: EverBright CRM 版本
   about_home_page: 主页
   about_project_page: 项目页
-  about_thank_you: 感谢使用Fat Free CRM! 希望使用愉快.
+  about_thank_you: 感谢使用EverBright CRM! 希望使用愉快.
   about_twitter: Twitter 更新
   about_user_group: 用户讨论组
   admin: 管理
@@ -522,8 +522,8 @@ zh-CN:
   password_intro: 请输入邮件地址，重置密码邮件将发到您的邮箱
   reset_password: 重置密码
   update_password_and_login: 更新密码并登录
-  back_to_crm: 返回 Fat Free CRM
-  crm_admin_page: Fat Free CRM 管理
+  back_to_crm: 返回 EverBright CRM
+  crm_admin_page: EverBright CRM 管理
   approve: 批准
   create_user: 创建用户
   last_seen: 上次 %{value} 之前见到
@@ -552,8 +552,8 @@ zh-CN:
       one: 1 个联系人
       other: ! '%{count} 个联系人'
     opportunity:
-      one: 1 个商机
-      other: ! '%{count} 个商机'
+      one: 1 个融资需求
+      other: ! '%{count} 个融资需求'
     lead:
       one: 1 个线索
       other: ! '%{count} 个线索'

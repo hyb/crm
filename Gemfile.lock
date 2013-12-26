@@ -1,3 +1,11 @@
+GIT
+  remote: http://github.com/orbitalimpact/Fat-Free-CRM-Lead-Importer
+  revision: 6a83f6032031bad9bb5984a68f4b5b29eecb471c
+  specs:
+    ffcrm_import_leads (0.0.1)
+      fat_free_crm
+      rails (~> 3.2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -54,7 +62,6 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    capistrano_colors (0.5.5)
     capybara (2.1.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -109,6 +116,34 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    fat_free_crm (0.12.0)
+      acts-as-taggable-on (~> 2.3.3)
+      acts_as_commentable (~> 3.0.1)
+      acts_as_list (~> 0.1.4)
+      ajax-chosen-rails (>= 0.2.1)
+      authlogic (= 3.1.0)
+      cancan
+      cocaine
+      dynamic_form
+      email_reply_parser_ffcrm
+      ffaker (>= 1.12.0)
+      haml (~> 3)
+      jquery-rails (~> 2.1.4)
+      nokogiri
+      paper_trail
+      paperclip
+      premailer
+      prototype-rails
+      rails (~> 3.2.12)
+      rails3-jquery-autocomplete
+      ransack_ffcrm (~> 0.7.1)
+      ransack_ui (>= 1.1.0)
+      responds_to_parent (>= 1.1.0)
+      sass (~> 3)
+      select2-rails
+      simple_form (~> 2.0.1)
+      valium
+      will_paginate (~> 3.0.2)
     ffaker (1.14.0)
     ffi (1.9.0)
     guard (1.4.0)
@@ -143,6 +178,7 @@ GEM
     mime-types (1.25)
     mini_portile (0.5.1)
     multi_json (1.8.2)
+    mysql2 (0.3.14)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -161,7 +197,6 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
       mime-types
-    pg (0.14.1)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -319,7 +354,6 @@ DEPENDENCIES
   bundler_local_development
   cancan
   capistrano
-  capistrano_colors
   capybara
   cocaine
   coffee-rails (~> 3.2.1)
@@ -331,16 +365,17 @@ DEPENDENCIES
   execjs
   factory_girl_rails
   ffaker (>= 1.12.0)
+  ffcrm_import_leads!
   guard
   guard-rails
   guard-rspec
   haml (~> 3)
   headless
   jquery-rails (~> 2.1.4)
+  mysql2
   nokogiri
   paper_trail
   paperclip
-  pg
   premailer
   prototype-rails
   pry-rails
